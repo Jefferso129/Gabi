@@ -1,1 +1,28 @@
-# Gabi
+document.body.innerHTML = `
+  <style>
+    .boton {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    #no {
+      position: relative;
+    }
+  </style>
+  <div id="anuncio">
+    <p>¿Quieres ser mi novia?</p>
+    <button id="si" class="boton">Sí</button>
+    <button id="no" class="boton">No</button>
+  </div>
+  <script>
+    document.getElementById('si').addEventListener('click', function() {
+      alert('TE AMO GABY');
+    });
+    document.getElementById('no').addEventListener('mouseover', function() {
+      this.style.top = Math.random() * window.innerHeight + 'px';
+      this.style.left = Math.random() * window.innerWidth + 'px';
+    });
+  </script>
+`;
+
